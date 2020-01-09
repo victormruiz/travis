@@ -16,7 +16,7 @@ jobs:
     - name: Test Files
       uses: Cyb3r-Jak3/html5validator-action@v0.3
       with:
-        root: tests/valid/index.html
+        root: .
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
