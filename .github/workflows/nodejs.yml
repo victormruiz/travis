@@ -27,7 +27,7 @@ jobs:
         npm install --global surge
         npm install html5-validator --save
         html5validator --root .
-        surge ./index.html --token SURGE_TOKEN
+        surge ./index.html --token ${{ secrets.SURGE_TOKEN }}
         
         
       env:
