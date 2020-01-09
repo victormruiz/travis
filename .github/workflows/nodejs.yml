@@ -24,7 +24,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install -g surge
-        surge /travis --token ${{ secrets.SURGE_TOKEN }}
+        surge ./ ${{ secrets.SURGE_DOMAIN }} ${{ secrets.SURGE_TOKEN }}
         
         
       env:
