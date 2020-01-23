@@ -1,3 +1,4 @@
+ 
 language: python
 python:
  - "3.6"
@@ -9,11 +10,11 @@ branches:
 install:
  - pip install html5validator
 
-script: html5validator --root _build/
+script: html5validator --root .
 
 
 deploy:
   provider: surge
-  project: ./_build/
-  domain: josedom24.surge.sh
+  project: .
+  domain: victormrm.surge.sh
   skip_cleanup: true
